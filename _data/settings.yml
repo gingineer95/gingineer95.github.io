@@ -1,0 +1,25 @@
+#-------------------------------
+# General Site Settings
+title: Kailey Smith
+email: Email:kaileysmith2021@u.northwestern.edu || Chicago IL, US
+
+
+#-------------------------------
+# Author Settings
+author:
+  name: Kailey Smith
+  # image: 01.jpg
+  say-hello: <strong>Robotics Engineer</strong>
+  bio1: Welcome to my portfolio! Please scroll
+  bio2: down to explore my recent projects.
+  about-me: About Me
+
+
+#-------------------------------
+# Contact links
+github: https://github.com/gingineer95
+github-title: github
+linkedin: https://www.linkedin.com/in/kailey-smith-188a9411a/
+linkedin-title: linkedin
+contact: Contact Me
+contact-blurb: I look forward to hearing from you!

@@ -1,0 +1,9 @@
+---
+layout: post
+title:  Robotic Spraying
+date:   2020-08-28 12:00:00 +0300
+image:  FANUC.png
+tags:   Manipulation, Motion Planning
+---
+Fill this in with all the good project info. Fill this in with all the good project info. Fill this in with all the good project info.
+Fill this in with all the good project info. Fill this in with all the good project info. Fill this in with all the good project info.

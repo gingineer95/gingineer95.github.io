@@ -1,0 +1,136 @@
+.hero {
+  padding: 30px 0;
+  margin-bottom: 80px;
+
+  .last-item {
+    display: flex;
+  }
+
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0 40px 0 0;
+    color: $black;
+    
+    .hero__title {
+      font-size: 40px;
+      font-weight: normal;
+    }
+
+    .hero__subtitle {
+      font-size: 18px;
+      line-height: 10px;
+      letter-spacing: 0.5px;
+    }
+
+    .hero__social {
+      display: flex;
+    }
+
+    .hero__social-title {
+      font-weight: 700;
+    }
+
+  }
+
+  .hero__image {
+    position: absolute;
+    top:100px;
+    right:0;
+    bottom:600px;
+    left:0;
+    background-position:center top;
+    background-repeat: no-repeat;
+    background-size: 1900px 250px;
+    opacity: 0.4;
+  }
+
+  .hero__overlay {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    bottom: 100px;
+    left: 0;
+    // background: rgba(19,41,48,0.8);
+  }
+
+  @media only screen and (max-width: $desktop) {
+    .hero__content {
+      padding: 0;
+
+      .hero__subtitle {
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $tablet) {
+    margin-bottom: 40px;
+
+    .last-item {
+      order: 1;
+    }
+
+    .hero__content {
+      .hero__title {
+        margin-bottom: 20px;
+        font-size: 27px;
+      }
+    }
+
+    .hero__image {
+      margin-bottom: 20px;
+      
+      img {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .hero__contact{
+    margin-top: 10px;
+    // padding-top: 20px;
+    // padding-bottom: 200px;
+
+    // h6{
+    //   a{
+    //   color: $black;
+    //   }
+    // }
+  }
+
+  .hero__contact-form{
+    input, textarea{
+      padding: 10px;
+      width: 500px;
+      border-radius: 5px;
+      border-color: $light-gray;
+    }
+    textarea{
+      height:100px;
+      line-height: 18px;
+    }
+    input:hover, textarea:hover, 
+    input:focus, textarea:focus{
+      border-color: $light-black;
+      box-shadow: $brand-color 0px 0px 15px;
+    }
+
+    .submit button{
+      font-size: 50px;
+      color: $white;
+      width: 800px;
+      height: 100px;
+      background-color: $brand-color;
+      border-radius: 5px;
+      border-color: $light-gray;
+    }
+  }
+
+  @media only screen and (max-width: $mobile) {
+    padding: 40px 0;
+  }
+}

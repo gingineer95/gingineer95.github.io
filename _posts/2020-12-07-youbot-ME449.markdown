@@ -1,0 +1,9 @@
+---
+layout: post
+title:  Mobile Manipulation of KUKA youBot
+date:   2020-12-07 12:00:00 +0300
+image:  youBot.png
+tags:   Manipulation, Motion Planning, Python, Modern Robotics
+---
+Fill this in with all the good project info. Fill this in with all the good project info. Fill this in with all the good project info.
+Fill this in with all the good project info. Fill this in with all the good project info. Fill this in with all the good project info.
