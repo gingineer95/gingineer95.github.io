@@ -5,20 +5,23 @@ date:   2020-12-08 12:00:00 +0300
 image:  Baxter_sorting.gif
 tags:   ROS, MoveIt!, OpenCV, Python
 ---
-<div align="center"><em>GIF above is playing at 4x speed</em></div>
-<p>&nbsp;</p>
+<!-- <div align="center"><em>GIF is playing at 4x speed.</em></div>
+<p>&nbsp;</p> -->
 
 # Project Overview:
-In this project, my team programmed a Rethink Baxter robot to segment and pick bottles and cans then drop them into separate recycling bins. We used OpenCV to detect and locate the randomly placed bottles and cans, while for the robotic manipulation we utilized MoveIt!. Take a look at the code on my <a href="https://github.com/gingineer95/baxter-recycling-segmentation" target="_blank" rel="noopener noreferrer">GitHub</a>. 
+In this project, my team programmed a Rethink Baxter robot to segment and pick bottles and cans then drop them into separate recycling bins. We used OpenCV to detect and locate the randomly placed bottles and cans, while for the robotic manipulation we utilized MoveIt!. Take a look at the code on my <a href="https://github.com/gingineer95/baxter-recycling-segmentation" target="_blank" rel="noopener noreferrer">GitHub</a>. (Note: the GIF above is playing at 2x speed)
 
-Below is a video (4x speed) of the project. The video starts by showing the bottles and cans being placed, then a quick view of the computer vision, and lastly it displays two different views of the robot in action. 
-
-<iframe width="750" height="400"
+Below is a link to a video (4x speed) of the project. The video starts by showing the bottles and cans being placed, then a quick view of the computer vision, and lastly it displays two different views of the robot in action. 
+<!-- <iframe width="750" height="400"
 src="https://youtu.be/0IDe7L2YoR4" 
 frameborder="0" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
-<p>&nbsp;</p>
+allowfullscreen></iframe> -->
+
+<!-- <p>&nbsp;</p>  -->
+<a href="http://www.youtube.com/watch?v=0IDe7L2YoR4" target="_blank" rel="noopener noreferrer">
+[![computer_vision.png](http://img.youtube.com/vi/0IDe7L2YoR4/0.jpg)]
+</a>
 
 ## MoveIt!
 The robot operation was controlled entirely through ROS's MoveIt! library for motion planning and manipulation (mainly the compute_cartesian_path command). After initalizing the Move Group Commander for Baxter's right arm, a table is added to the Planning Scence to ensure that the robot does not collide with the table. 

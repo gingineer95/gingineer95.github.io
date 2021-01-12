@@ -17,12 +17,14 @@
     .hero__title {
       font-size: 40px;
       font-weight: normal;
+      color: $white;
     }
 
     .hero__subtitle {
       font-size: 18px;
       line-height: 10px;
       letter-spacing: 0.5px;
+      color: $white;
     }
 
     .hero__social {
@@ -44,7 +46,7 @@
     background-position:center top;
     background-repeat: no-repeat;
     background-size: 1900px 250px;
-    opacity: 0.4;
+    opacity: 0.3;
   }
 
   .hero__overlay {
