@@ -1,5 +1,5 @@
-baseurl: "/gingineer95.github.io/kaileysmith" # the subpath of your site, e.g. /blog
-url: "https://gingineer95.github.io/kaileysmith" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/gingineer95.github.io" # the subpath of your site, e.g. /blog
+url: "https://gingineer95.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 # Build settings
