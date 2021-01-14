@@ -2,8 +2,8 @@
 layout: post
 title:  Mobile Manipulation of KUKA youBot
 date:   2020-12-07 12:00:00 +0300
-image:  youBot.png
+image:  ME449.gif
 tags:   Manipulation, Motion Planning, Python, Modern Robotics
 ---
-Fill this in with all the good project info. Fill this in with all the good project info. Fill this in with all the good project info.
-Fill this in with all the good project info. Fill this in with all the good project info. Fill this in with all the good project info.
+# Project Overview:
+In this project, my team programmed a Rethink Baxter robot to segment and pick bottles and cans then drop them into separate recycling bins. We used OpenCV to detect and locate the randomly placed bottles and cans, while for the robotic manipulation we utilized MoveIt!. Take a look at the code on my <a href="https://github.com/gingineer95/baxter-recycling-segmentation" target="_blank" rel="noopener noreferrer">GitHub</a>. (Note: the GIF above is playing at 6x speed)
