@@ -131,7 +131,7 @@
       margin: 0 15px;
 
       a {
-        font-size: 30px;
+        font-size: 40px;
         color: $light-black;
         &:hover {
           color: $white;
@@ -150,16 +150,17 @@
 
   .prev,
   .next {
-    flex: 1 0 50%;
+    // flex: 0.5 0 50%;
     &:last-child {
-      padding-right: 0;
+      padding-left: 30%;
     }
 
     .post__nav__image {
-      display: block;
-      margin-bottom: 40px;
+      display: table;
+      width: 400px;
+      margin-bottom: 10px;
       background-position: center;
-      background-size: cover;
+      background-size: auto;
       background-repeat: no-repeat;
       background-color: $white;
       transition: .35s ease-in-out;
@@ -184,7 +185,7 @@
       
       a {
         display: inline-block;
-        max-width: 250px;
+        max-width: 400px;
         padding: 0 10px;
         vertical-align: middle;
         white-space: nowrap;
@@ -199,11 +200,13 @@
   }
 
   .prev {
-    padding-right: 10px;
+    padding-right: 0px;
+    // padding-left: -50px;
   }
 
   .next {
-    padding-left: 10px;
+    // padding-right: -50px;
+    // padding-left: 50px;
   }
 
   .prev__excerpt,
