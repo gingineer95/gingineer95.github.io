@@ -5,7 +5,7 @@ permalink: /about/
 image: Kailey.jpg
 ---
 
-I'm currently pursuing a Master of Science in Robotics at Northwestern University (2020-2021 Cohort). Some of the topics I've become familiar with include robotic manipulation, navigation, mechatronics, SLAM and machine learning. You can see how I've applied these topics in various projects <a href="https://gingineer95.github.io/" target="_blank" rel="noopener noreferrer">here</a>.
+I'm currently pursuing a Master of Science in Robotics at Northwestern University (2020-2021 Cohort). Some of the topics I've learned in class include robotic manipulation, navigation, mechatronics, SLAM and machine learning. You can see how I've applied these topics in various projects <a href="https://gingineer95.github.io/" target="_blank" rel="noopener noreferrer">here</a>.
 
 I recieved my Bachelor of Science in Mechanical Engineering from the Milwaukee School of Engineering in 2017. At MSOE, I worked on a senior design project centered around the NASA Lunabotics competition. I lead the excavation sub-system where, using MATLAB, I simulated various mathetmaical models to determine the digging forces applied on conveyorized buckets. Once I found an optimal design, I 3D printed the buckets, fabricated the conveyor system and confirmed functionality via testing. 
 
