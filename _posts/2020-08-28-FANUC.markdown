@@ -5,9 +5,33 @@ date:   2020-08-28 12:00:00 +0300
 image:  FANUC.gif
 tags:   Manipulation, Motion Planning
 ---
-Fill this in with all the good project info. Fill this in with all the good project info. Fill this in with all the good project info.
-Fill this in with all the good project info. Fill this in with all the good project info. Fill this in with all the good project info.
+# Project Overview:
+While working at Spraying Systems Co., I was the leader of a small team dedicated to researching and designing a robotic spraying system to be used for multiple industries. Using a 6-axis FANUC robotic arm we attached various nozzles as the end of arm tooling. With this newfound nozzle mobility we were able to create more elborate spray patterns and greatly reduce liquid waste as seen in the GIF above (playing at 1x speed). 
 
-link: https://www.youtube.com/watch?v=pfqw37QF5y8&ab_channel=SprayingSystemsCo.
+Below is a link to a video demonstration of the robot in action. The video focuses largely on the spraying benefits of using a robotic arm, but it highlights the various manipulation and motion planning skills I learned while working on this project.
 
-1x speed GIF
+<a href="https://www.youtube.com/watch?v=pfqw37QF5y8&ab_channel=SprayingSystemsCo" target="_blank" rel="noopener noreferrer">
+![FANUC.png](http://img.youtube.com/vi/pfqw37QF5y8/0.jpg)
+</a>
+
+Since no one at SSCO. had ever worked with a robot before, it was up to me and my team to learn all about robot safety guidelines, how to incorporate equipment like conveyors, lights, our own spray controllers and most importantly how to use FANUC's pick and place software and vision system. 
+
+## Applications
+Our main goal was to eventually build and sell whole robotic spraying workcells, using FANUC as our robot vendor. But before going to market with this technology we worked on a couple different customer applications on an exploration basis. 
+
+A couple of applications I worked on included:
+* Icing outlines and decorations on various cookies.
+* Spraying glue onto custom made countertops.
+* Spraying plates and trays with a coating used to keep out moisture.
+
+## Workflow
+For a given application, the general workflow was as follows:
+1. Use FANUC's computer vision software to identify key features on the object to be sprayed. 
+2. Run the part down the conveyor so it stops in front of the robot. This tracks encoder counts from the camera to the robot.
+3. Teach the spray motion plan on a point to point basis. 
+4. Repeat for any other objects
+5. Test and touch up vision or motion plan and necessary for different object orientations. 
+
+It was through repeating this process for a variety of products that I became familiar with different robotic challanges. For instance, it was generally easy to detect the outline of a stationary object, but once we started trying to detect the same object while it was moving we would often run into issues. I learned that lighting plays a huge role in a sucessfull computer vision system. I also learned that no matter how careful you think are motion plan is, you're bound to run into singularities, especially for a moving part at various angles. 
+
+While my time working with a FANUC robotic arm may have done little to improve my coding skills I am confident it provided a solid foundation in higher level robotics ascepts and has allowed me to relate topics I'm learning in class back to my previous work experience. 

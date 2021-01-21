@@ -20,7 +20,7 @@ allowfullscreen></iframe> -->
 
 <!-- <p>&nbsp;</p>  -->
 <a href="http://www.youtube.com/watch?v=0IDe7L2YoR4" target="_blank" rel="noopener noreferrer">
-[![computer_vision.png](http://img.youtube.com/vi/0IDe7L2YoR4/0.jpg)]
+![computer_vision.png](http://img.youtube.com/vi/0IDe7L2YoR4/0.jpg)
 </a>
 
 ## MoveIt!
