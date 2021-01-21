@@ -1,13 +1,15 @@
 .contact {
   .contact__list {
     li {
+      padding: 50px;
       margin-left: 10px;
       display: inline-block;
 
       a {
-        padding: 5%;
-        font-size: 20px;
-        color: $black;
+        border: 2px solid powderblue;
+        padding: 50px;
+        font-size: 50px;
+        color: $white;
         &:hover {
           color: $brand-color;
         }

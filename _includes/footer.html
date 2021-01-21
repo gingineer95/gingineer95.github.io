@@ -1,4 +1,5 @@
 <!-- begin footer -->
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 <footer class="footer">
   <div class="container">
     <div class="row">
@@ -9,15 +10,19 @@
           {% else %}
             <!-- {{ site.data.settings.email }} -->
             <h4>{{ site.data.settings.email }}</h4>
-            {% endif %}
+          {% endif %}
+
+          <!-- {% include contact-link.html %} -->
       </div>
     </div>
-    <!-- <div class="row"> -->
+    <div class="row">
       <div class="col col-12">
-            {% include contact-link.html %}
-      
+        <ul class = "copyright">
+          <a href="{{ site.data.settings.github }}" target="_blank" rel="noopener noreferrer" class="nav__link"><span class="iconify" data-icon="ion-logo-github" data-inline="false"></span></a>
+          <a href="{{ site.data.settings.linkedin }}" target="_blank" rel="noopener noreferrer" class="nav__link"><span class="iconify" data-icon="ant-design:linkedin-filled" data-inline="false"></a>
+        </ul>
       </div>
-    <!-- </div> -->
+    </div>
   </div>
 </footer>
 <!-- end footer -->
