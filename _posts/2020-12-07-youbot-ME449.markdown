@@ -3,7 +3,27 @@ layout: post
 title:  Mobile Manipulation of KUKA youBot
 date:   2020-12-07 12:00:00 +0300
 image:  ME449.gif
-tags:   Manipulation, Motion Planning, Python, Modern Robotics
+tags:   Manipulation, Motion Planning, Python
 ---
 # Project Overview:
-In this project, my team programmed a Rethink Baxter robot to segment and pick bottles and cans then drop them into separate recycling bins. We used OpenCV to detect and locate the randomly placed bottles and cans, while for the robotic manipulation we utilized MoveIt!. Take a look at the code on my <a href="https://github.com/gingineer95/baxter-recycling-segmentation" target="_blank" rel="noopener noreferrer">GitHub</a>. (Note: the GIF above is playing at 6x speed)
+This software plans a trajectory for the end-effector of the youBot mobile manipulator (a mobile base with four mecanum wheels and a 5R robot arm), performs odometry as the chassis moves, and performs feedback control to drive the youBot to pick up a block at a specified location, carry it to a desired location, and places it on the ground. Take a look at the code on my <a href="https://github.com/gingineer95/mobile_manipulation_youbot" target="_blank" rel="noopener noreferrer">GitHub</a>. (Note: the GIF above is playing at 6x speed). 
+
+### Reference Trajectory Generation
+Given the inital and final configuration of cube, the inital configuration of the robot and the controller gains, the first objective was to generate the reference trajectory for the end-effector frame. To do this, several rigid body transformations were calculated to relate the various cube positions to the end-effector. Then, eight concatenated trajectory segments were broken down and calculated in the order below:
+
+1. A trajectory to move the gripper from its initial configuration to a "standoff" configuration a few cm above the block.
+2. A trajectory to move the gripper down to the grasp position.
+3. Closing of the gripper.
+4. A trajectory to move the gripper back up to the "standoff" configuration.
+5. A trajectory to move the gripper to a "standoff" configuration above the final configuration.
+6. A trajectory to move the gripper to the final configuration of the object.
+7. Opening of the gripper.
+8. A trajectory to move the gripper back to the "standoff" configuration.
+
+### Feedforward / Feedback Control
+After the end-effector trajectories were determined, I used those and the controller gains to determine the end-effector twist expressed in the end-effector frame. After I calculated the error twist for each joint I was able to use the feedforward and feedback control law expressed in the equation below to find the end-effector twist.
+
+![]({{ site.baseurl }}/images/ME449_control_eq.png)
+
+### youBot Kinematics Simulator
+The final task involved using a given robot configuration calculate a new configuration after a cetain time step. The given configuration was broken down into the the chassis configuration, arm configuration and wheel angles. Along with the joint speeds, I was able to calculate new chassis configuration using odometry and next arm joint and wheel angles using the Euler Step. 
