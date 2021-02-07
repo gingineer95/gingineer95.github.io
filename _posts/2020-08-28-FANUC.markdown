@@ -6,7 +6,7 @@ image:  FANUC.gif
 tags:   Manipulation, Motion Planning
 ---
 # Project Overview:
-While working at Spraying Systems Co., I was the leader of a small team dedicated to researching and designing a robotic spraying system to be used for multiple industries. Using a 6-axis FANUC robotic arm we attached various nozzles as the end of arm tooling. With this newfound nozzle mobility we were able to create more elborate spray patterns and greatly reduce liquid waste as seen in the GIF above (playing at 1x speed). 
+While working at Spraying Systems Co., I was the leader of a small team dedicated to researching and designing a robotic spraying system to be used for multiple industries. Using a 6-axis FANUC robotic arm we attached various nozzles as the end of arm tooling. With this newfound nozzle mobility we were able to create more elaborate spray patterns and greatly reduce liquid waste as seen in the GIF above (playing at 1x speed). 
 
 Below is a link to a video demonstration of the robot in action. The video focuses largely on the spraying benefits of using a robotic arm, but it highlights the various manipulation and motion planning skills I learned while working on this project.
 
@@ -32,6 +32,6 @@ For a given application, the general workflow was as follows:
 4. Repeat for any other objects
 5. Test and touch up vision or motion plan and necessary for different object orientations. 
 
-It was through repeating this process for a variety of products that I became familiar with different robotic challanges. For instance, it was generally easy to detect the outline of a stationary object, but once we started trying to detect the same object while it was moving we would often run into issues. I learned that lighting plays a huge role in a sucessfull computer vision system. I also learned that no matter how careful you think are motion plan is, you're bound to run into singularities, especially for a moving part at various angles. 
+It was through repeating this process for a variety of products that I became familiar with different robotic challenges. For instance, it was generally easy to detect the outline of a stationary object, but once we started trying to detect the same object while it was moving we would often run into issues. I learned that lighting plays a huge role in a successful computer vision system. I also learned that no matter how careful you think your motion plan is, you're bound to run into singularities, especially for a moving part at various angles. 
 
-While my time working with a FANUC robotic arm may have done little to improve my coding skills I am confident it provided a solid foundation in higher level robotics ascepts and has allowed me to relate topics I'm learning in class back to my previous work experience. 
+While my time working with a FANUC robotic arm may have done little to improve my coding skills I am confident it provided a solid foundation in higher level robotics aspects and has allowed me to relate topics I'm learning in class back to my previous work experience.
