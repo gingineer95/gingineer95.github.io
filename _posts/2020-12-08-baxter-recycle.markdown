@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Baxter Recyling Segmentation
+title:  Baxter Recycling Segmentation
 date:   2020-12-08 12:00:00 +0300
 image:  Baxter_sorting.gif
 tags:   ROS, MoveIt!, OpenCV, Python
@@ -24,9 +24,9 @@ allowfullscreen></iframe> -->
 </a>
 
 ## MoveIt!
-The robot operation was controlled entirely through ROS's MoveIt! library for motion planning and manipulation (mainly the compute_cartesian_path command). After initalizing the Move Group Commander for Baxter's right arm, a table is added to the Planning Scence to ensure that the robot does not collide with the table. 
+The robot operation was controlled entirely through ROS's MoveIt! library for motion planning and manipulation (mainly the compute_cartesian_path command). After initializing the Move Group Commander for Baxter's right arm, a table is added to the Planning Scene to ensure that the robot does not collide with the table. 
 
-The arm then moves to a position out of the camera's field of view and calls the camera's segmentation service. Once the objects have been located and classfied, the arm moves to a predetermined home position over the objects to ensure smooth and predictable motion of the arm (This home configuration was determined after testing).
+The arm then moves to a position out of the camera's field of view and calls the camera's segmentation service. Once the objects have been located and classified, the arm moves to a predetermined home position over the objects to ensure smooth and predictable motion of the arm (This home configuration was determined after testing).
 
 
 ## Computer Vision
@@ -39,12 +39,12 @@ A Realsense camera was used to take real-time video of the objects placed in fro
 1. Baxter's right arm moves to the home position where the robot is safely above all objects.
 2. A livestream of the camera opens that captures, segments and locates all objects on the table. (For this project, we only have bottles and cans)
 3. For an object on the table, the robot's head will display either the can image or the bottle image, depending on the classification.
-4. Next, Baxter's right arm will move to object's (x,y) corrdinate at a safe z height away. This is the same height for bottles and cans.
+4. Next, Baxter's right arm will move to object's (x,y) coordinate at a safe z height away. This is the same height for bottles and cans.
 5. The arm then moves down to the appropriate perch height, depending on classification. (For example, the robot arm will be position further away from the table for bottle, since those are taller than cans).
 6. Once safely at the perch height, the ame moves down again. This time aligning the object in between the grippers.
 7. Baxter's arm then grasps the object.
 8. The arm moves back up to the "safe position"; the same position as step 4.
 9. Baxter now moves back to the home position. This step was added to ensure predictable behavior of the robot arm.
-10. Depending on the object's classification, the arm will move to the appropriate bin. Baxter's head will also display the recylcing image.
+10. Depending on the object's classification, the arm will move to the appropriate bin. Baxter's head will also display the recycling image.
 11. Once over the bin, Baxter opens its grippers and drops the object. To show that the object has been recycled, Baxter displays the bin image.
 12. Steps 3 through 11 are repeated for all objects found.
