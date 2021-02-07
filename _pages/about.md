@@ -11,7 +11,4 @@ I recieved my Bachelor of Science in Mechanical Engineering from the Milwaukee S
 
 From May 2017 to August 2020 I worked as a Project Engineer at Spraying Systems Co., an industrial company that makes spray nozzles. There I worked as the leader of a 3-man group in charge of developing robotic spraying. Using a 6-axis FANUC robotic arm we attached various nozzles as the end of arm tooling. With nozzle mobility we were able to create more elborate spray patterns and greatly reduce liquid waste. You can read more about my work with the FANUC arm <a href="https://gingineer95.github.io/2020/08/28/FANUC/" target="_blank" rel="noopener noreferrer">here</a>.
 
-
-You can view my resume <a href="https://drive.google.com/file/d/1SSu7PINUUNm-aCHh1WBY4tKjLfe7M5JJ/view?usp=sharing" target="_blank" rel="noopener noreferrer">here</a>.
-
 When I'm not working on my Robotics projects, you can usually find me at my local pottery studio where I've enjoyed making a multitude of mugs, plates and bowls!
