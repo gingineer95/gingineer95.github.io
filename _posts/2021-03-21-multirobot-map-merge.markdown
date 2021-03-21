@@ -22,10 +22,14 @@ In order for the robots to autonomously explore an environment, I implemented fr
 <div align="center">Frontier edges are open cells adjacent to unknown cells, marked with an “x” below. </div>
 <p align="center">![]({{ site.baseurl }}/images/frontier_edges.png)</p>
 
-<div align="center">Frontier regions are groups of adjacent frontier regions, marked with different colors below. Each region's centroid is also marked
+<div align="center">Frontier regions are groups of adjacent frontier regions, marked with different colors below. Each region's centroid is also marked.</div>
 <p align="center">![]({{ site.baseurl }}/images/frontier_regions.png)</p>
+<p align="center">
+  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
+</p>
 
-Below is a video of frontier exploration working on one robot both in simulation and on an actual Turtlebot3
+Below is a video of frontier exploration working on one robot both in simulation and on an actual Turtlebot3. 
+
 ** insert video **
 
 ## Map Expansion
