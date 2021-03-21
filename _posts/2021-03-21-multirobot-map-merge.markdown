@@ -27,11 +27,11 @@ In order for the robots to autonomously explore an environment, I implemented fr
   <img width="250" height="100" src="{{ site.baseurl }}/images/frontier_regions.png">
 </p>
 
-Below is a GIF (at 3x speed) of frontier exploration working on one robot both in simulation and on an actual Turtlebot3. 
+At the top of the page is a GIF (at 3x speed) of frontier exploration working on one robot both in simulation and on an actual Turtlebot3. 
 
-<p align="center">
+<!-- <p align="center">
   <img width="800" height="400" src="{{ site.baseurl }}/images/3x_real_robot.gif">
-</p>
+</p> -->
 
 ## Map Expansion
 Before being able to merge the robot's maps, I had to manipulate the maps. The multirobot_map_merge node that I used was originally written for gmapping and produced maps with the same size and origin for all robots. However, I decided to utilize slam_toolbox instead of gmapping. This meant that I had to expand the maps I recieved from slam_toolbox and resize them so that all robot maps had matching origins and sizes. 
