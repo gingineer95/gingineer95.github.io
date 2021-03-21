@@ -36,7 +36,7 @@ Below is a video of frontier exploration working on one robot both in simulation
 ## Map Expansion
 Before being able to merge the robot's maps, I had to manipulate the maps. The multirobot_map_merge node that I used was originally written for gmapping and produced maps with the same size and origin for all robots. However, I decided to utilize slam_toolbox instead of gmapping, This meant that I had to expand the maps I recieved from slam_toolbox and resize them so that all robot maps had matching origins and sizes. 
 
-This wasn't as easy as just redefining the map's width, height and origin; I also had to edit the map's data. The new map's width * height had to match the length of the cell data
+This wasn't as easy as just redefining the map's width, height and origin; I also had to edit the map's data. The new map's width * height had to match the size of the cell data and if I simply redefined the map's dimensions without actually adding any more cell data, I would have encounterd a memory deallocation error in C++. 
 
 ## Map Merging
 
