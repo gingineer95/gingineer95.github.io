@@ -6,7 +6,7 @@ image:  3x_real_robot.gif
 tags:   SLAM, Frontier Exploration, Map Merge, ROS, C++
 ---
 
-# Project Overview
+# Project Overview:
 In this project, my goal was to use multiple robots to autonomously explore an environment and create one global merged map comprised of each robot's individual map. This was be achived with or without knowledge of the robot's initial positions. Frontier exploration was implemented as the autonomous navigation algorithm and map merging was exectued by modifying the <a href="http://wiki.ros.org/multirobot_map_merge" target="_blank" rel="noopener noreferrer">multirobot_map_merge</a> node. Have a look at the code on my <a href="https://github.com/gingineer95/Multi-Robot-Exploration-and-Map-Merging" target="_blank" rel="noopener noreferrer">GitHub</a>.
 
 Below is a link to a video of the simualed project at 20x speed
