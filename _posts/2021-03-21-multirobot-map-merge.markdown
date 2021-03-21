@@ -25,7 +25,7 @@ In order for the robots to autonomously explore an environment, I implemented fr
 <div align="center">Frontier regions are groups of adjacent frontier regions, marked with different colors below. Each region's centroid is also marked.</div>
 <p align="center">![]({{ site.baseurl }}/images/frontier_regions.png)</p>
 <p align="center">
-  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
+  <img width="460" height="300" src="{{ site.baseurl }}/images/frontier_regions.png">
 </p>
 
 Below is a video of frontier exploration working on one robot both in simulation and on an actual Turtlebot3. 
@@ -34,6 +34,8 @@ Below is a video of frontier exploration working on one robot both in simulation
 
 ## Map Expansion
 Before being able to merge the robot's maps, I had to manipulate the maps. The multirobot_map_merge node that I used was originally written for gmapping and produced maps with the same size and origin for all robots. However, I decided to utilize slam_toolbox instead of gmapping, This meant that I had to expand the maps I recieved from slam_toolbox and resize them so that all robot maps had matching origins and sizes. 
+
+
 
 ## Map Merging
 
