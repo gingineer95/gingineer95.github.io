@@ -2,7 +2,7 @@
 layout: post
 title:  Multi-Robot Exploration and Map Merging
 date:   2021-03-21 12:00:00 +0300
-image:  gaz_unknown_pos.png
+image:  frontier_edges.png
 tags:   SLAM, Frontier Exploration, Map Merge, ROS, C++
 ---
 
@@ -20,14 +20,15 @@ Below is a link to a video (__x speed) of the project.
 In order for the robots to autonomously explore an environment, I implemented frontier exploration from scratch. By manipulating the occupancy grid generated from <a href="http://wiki.ros.org/slam_toolbox" target="_blank" rel="noopener noreferrer">slam_toolbox</a>. I was able to find all the frontier edges and then group the edges into seperate frontier regions via <a href="http://web.archive.org/web/20200218053936/http://robotfrontier.com/frontier/detect.html" target="_blank" rel="noopener noreferrer">this algorithm</a>. For each frontier region, I found the region's centroid. Lastly, I determined which centroid was closest to the robot's current position and chose that centroid to move to. This process repeats until all areas of the map are explored. 
 
 <div align="center">Frontier edges are open cells adjacent to unknown cells, marked with an “x” below.</div>
-![]({{ site.baseurl }}/images/frontier_edges.png)
+<div align="center">![]({{ site.baseurl }}/images/frontier_edges.png)</div>
 
 <div align="center">Frontier regions are groups of adjacent frontier regions, marked with different colors below.</div>
-![]({{ site.baseurl }}/images/frontier_regions.png)
+<div align="center">![]({{ site.baseurl }}/images/frontier_regions.png)</div>
 
-
+Below is a video of frontier exploration working on one robot both in simulation and on an actual Turtlebot3
 ** insert video of frontier exploration on real robot and simulation? **
 
 ## Map Expansion
+Before being able to merge the robot's maps, I had to manipulate the 
 
 ## Map Merging
