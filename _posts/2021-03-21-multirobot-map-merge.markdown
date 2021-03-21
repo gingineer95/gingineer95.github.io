@@ -7,7 +7,7 @@ tags:   SLAM, Frontier Exploration, Map Merge, ROS, C++
 ---
 
 # Project Overview:
-In this project, my goal was to use multiple robots to autonomously explore an environment and create one global merged map comprised of each robot's individual map. This was be achived with or without knowledge of the robot's initial positions. Frontier exploration was implemented as the autonomous navigation algorithm and map merging was exectued by modifying the <a href="http://wiki.ros.org/multirobot_map_merge" target="_blank" rel="noopener noreferrer">multirobot_map_merge</a> node. Have a look at the code on my <a href="https://github.com/gingineer95/Multi-Robot-Exploration-and-Map-Merging" target="_blank" rel="noopener noreferrer">GitHub</a>.
+In this project, my goal was to use multiple robots to autonomously explore an environment and create one global merged map comprised of each robot's individual map. This was be achived with or without knowledge of the robot's initial positions. Frontier exploration was implemented as the autonomous navigation algorithm and map merging was exectued by modifying the <a href="http://wiki.ros.org/multirobot_map_merge" target="_blank" rel="noopener noreferrer">multirobot_map_merge</a> node. Have a look at the code on my <a href="https://github.com/gingineer95/Multi-Robot-Exploration-and-Map-Merging" target="_blank" rel="noopener noreferrer">GitHub</a>. Above is a GIF (at 3x speed) of frontier exploration working on one robot both in simulation and on an actual Turtlebot3.
 
 Below is a link to a video of the simualed project at 20x speed
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6pEU1-0Ax6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -27,8 +27,6 @@ In order for the robots to autonomously explore an environment, I implemented fr
   <img width="250" height="100" src="{{ site.baseurl }}/images/frontier_regions.png">
 </p>
 
-At the top of the page is a GIF (at 3x speed) of frontier exploration working on one robot both in simulation and on an actual Turtlebot3. 
-
 <!-- <p align="center">
   <img width="800" height="400" src="{{ site.baseurl }}/images/3x_real_robot.gif">
 </p> -->
@@ -43,7 +41,7 @@ Therefore I wrote my own map_expansion node to solve this issue. This node creat
 Please see the image below to visualize the sections of the new map that were added. The black box represents the map created from slam_toolbox. The map expansion node fills in the yellow box, then the orange boxes and finally the green box with unknown cells for the new map. 
 
 <p align="center">
-  <img width="600" height="200" src="{{ site.baseurl }}/images/map_expansion.png">
+  <img width="500" height="200" src="{{ site.baseurl }}/images/map_expansion.png">
 </p>
 
 ## Map Merging
