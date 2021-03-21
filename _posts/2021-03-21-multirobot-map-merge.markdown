@@ -10,9 +10,11 @@ tags:   SLAM, Frontier Exploration, Map Merge, ROS, C++
 In this project, my goal was to use multiple robots to autonomously explore an environment and create one global merged map comprised of each robot's individual map. This was be achived with or without knowledge of the robot's initial positions. Frontier exploration was implemented as the autonomous navigation algorithm and map merging was exectued by modifying the <a href="http://wiki.ros.org/multirobot_map_merge" target="_blank" rel="noopener noreferrer">multirobot_map_merge</a> node. Have a look at the code on my <a href="https://github.com/gingineer95/Multi-Robot-Exploration-and-Map-Merging" target="_blank" rel="noopener noreferrer">GitHub</a>.
 
 Below is a link to a video (20x speed) of the project......
-<a href="https://www.youtube.com/watch?v=6pEU1-0Ax6o&ab_channel=KaileySmith" target="_blank" rel="noopener noreferrer">
+<a href="https://www.youtube.com/watch?v=6pEU1-0Ax6o" target="_blank" rel="noopener noreferrer">
 ![frontier_edges.png](https://www.youtube.com/vi/6pEU1-0Ax6o/0.jpg)
 </a>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6pEU1-0Ax6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Frontier Exploration and SLAM
 In order for the robots to autonomously explore an environment, I implemented frontier exploration from scratch. By manipulating the occupancy grid generated from <a href="http://wiki.ros.org/slam_toolbox" target="_blank" rel="noopener noreferrer">slam_toolbox</a>. I was able to find all the frontier edges and then group the edges into seperate frontier regions via <a href="http://web.archive.org/web/20200218053936/http://robotfrontier.com/frontier/detect.html" target="_blank" rel="noopener noreferrer">this algorithm</a>. For each frontier region, I found the region's centroid. Lastly, I determined which centroid was closest to the robot's current position and chose that centroid to move to. This process repeats until all areas of the map are explored. 
@@ -43,7 +45,7 @@ Therefore I wrote my own map_expansion node to solve this issue. This node creat
 Please see the image below to visualize the sections of the new map that were added. The black box represents the map created from slam_toolbox. The map expansion node fills in the yellow box, then the orange boxes and finally the green box with unknown cells for the new map. 
 
 <p align="center">
-  <img width="800" height="800" src="{{ site.baseurl }}/images/map_expansion.png">
+  <img width="700" height="600" src="{{ site.baseurl }}/images/map_expansion.png">
 </p>
 
 ## Map Merging
