@@ -8,7 +8,7 @@ tags:   ROS, MoveIt!, OpenCV, Python
 <!-- <div align="center"><em>GIF is playing at 4x speed.</em></div>
 <p>&nbsp;</p> -->
 
-# Project Overview:
+# Project Overview
 In this project, my team programmed a Rethink Baxter robot to segment and pick bottles and cans then drop them into separate recycling bins. We used OpenCV to detect and locate the randomly placed bottles and cans, while for the robotic manipulation we utilized MoveIt!. Take a look at the code on my <a href="https://github.com/gingineer95/baxter-recycling-segmentation" target="_blank" rel="noopener noreferrer">GitHub</a>. (Note: the GIF above is playing at 2x speed)
 
 Below is a link to a video (4x speed) of the project. The video starts by showing the bottles and cans being placed, then a quick view of the computer vision, and lastly it displays two different views of the robot in action. 

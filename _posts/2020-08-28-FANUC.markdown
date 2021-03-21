@@ -5,7 +5,7 @@ date:   2020-08-28 12:00:00 +0300
 image:  FANUC.gif
 tags:   Manipulation, Motion Planning
 ---
-# Project Overview:
+# Project Overview
 While working at Spraying Systems Co., I was the leader of a small team dedicated to researching and designing a robotic spraying system to be used for multiple industries. Using a 6-axis FANUC robotic arm we attached various nozzles as the end of arm tooling. With this newfound nozzle mobility we were able to create more elaborate spray patterns and greatly reduce liquid waste as seen in the GIF above (playing at 1x speed). 
 
 Below is a link to a video demonstration of the robot in action. The video focuses largely on the spraying benefits of using a robotic arm, but it highlights the various manipulation and motion planning skills I learned while working on this project.

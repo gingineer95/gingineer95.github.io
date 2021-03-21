@@ -5,7 +5,7 @@ date:   2020-12-06 12:00:00 +0300
 image:  jack-in-box.gif
 tags:   Python, Simulation, Dynamics
 ---
-# Project Overview:
+# Project Overview
 This project entailed simulating a planar multi-body, multi-impact dynamic system for which I chose to model a jack-in-a-box. Given that both the jack and the box have mass and the box also experiences an external force, I calculated multiple rigid body transformations to find the Euler-Lagrange equations, dynamic constraints, and impact update laws. After simulating the system I then animated it as seen in the GIF above (playing at 1x speed). Take a look at the code on my <a href="https://github.com/gingineer95/dynamics_simulation" target="_blank" rel="noopener noreferrer">GitHub</a>. 
 
 ## Model Description

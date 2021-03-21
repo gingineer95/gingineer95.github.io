@@ -6,10 +6,10 @@ image:  gaz_unknown_pos.png
 tags:   SLAM, Frontier Exploration, Map Merge, ROS, C++
 ---
 
-# Project Overview:
-In this project, my goal was to use multiple robots to autonomously explore an environment and create one global merged map comprised of each's robot individual map. This can be achived with or without knowledge of the robot's initial positions. Frontier exploration was implemented as the autonomous navigation algorithm. Map merging was achieved by modifying the multirobot_map_merge node.
+# Project Overview
+In this project, my goal was to use multiple robots to autonomously explore an environment and create one global merged map comprised of each robot's individual map. This was be achived with or without knowledge of the robot's initial positions. Frontier exploration was implemented as the autonomous navigation algorithm and map merging was exectued by modifying the <a href="http://wiki.ros.org/multirobot_map_merge" target="_blank" rel="noopener noreferrer">multirobot_map_merge</a> node. Have a look at the code on my <a href="https://github.com/gingineer95/Multi-Robot-Exploration-and-Map-Merging" target="_blank" rel="noopener noreferrer">GitHub</a>.
 
-Below is a link to a video (4x speed) of the project. The video starts by showing the bottles and cans being placed, then a quick view of the computer vision, and lastly it displays two different views of the robot in action. 
+Below is a link to a video (__x speed) of the project.
 
 ** insert viedo here **
 <!-- <a href="http://www.youtube.com/watch?v=0IDe7L2YoR4" target="_blank" rel="noopener noreferrer">
@@ -17,5 +17,17 @@ Below is a link to a video (4x speed) of the project. The video starts by showin
 </a> -->
 
 ## Frontier Exploration and SLAM
+In order for the robots to autonomously explore an environment, I implemented frontier exploration from scratch. By manipulating the occupancy grid generated from <a href="http://wiki.ros.org/slam_toolbox" target="_blank" rel="noopener noreferrer">slam_toolbox</a>. I was able to find all the frontier edges and then group the edges into seperate frontier regions via <a href="http://web.archive.org/web/20200218053936/http://robotfrontier.com/frontier/detect.html" target="_blank" rel="noopener noreferrer">this algorithm</a>. For each frontier region, I found the region's centroid. Lastly, I determined which centroid was closest to the robot's current position and chose that centroid to move to. This process repeats until all areas of the map are explored. 
+
+<div align="center">Frontier edges are open cells adjacent to unknown cells, marked with an “x” below.</div>
+![]({{ site.baseurl }}/images/frontier_edges.png)
+
+<div align="center">Frontier regions are groups of adjacent frontier regions, marked with different colors below.</div>
+![]({{ site.baseurl }}/images/frontier_regions.png)
+
+
+** insert video of frontier exploration on real robot and simulation? **
+
+## Map Expansion
 
 ## Map Merging
