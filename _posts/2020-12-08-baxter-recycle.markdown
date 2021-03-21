@@ -19,9 +19,11 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe> -->
 
 <!-- <p>&nbsp;</p>  -->
-<a href="http://www.youtube.com/watch?v=0IDe7L2YoR4" target="_blank" rel="noopener noreferrer">
+<!-- <a href="http://www.youtube.com/watch?v=0IDe7L2YoR4" target="_blank" rel="noopener noreferrer">
 ![computer_vision.png](http://img.youtube.com/vi/0IDe7L2YoR4/0.jpg)
-</a>
+</a> -->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0IDe7L2YoR4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## MoveIt!
 The robot operation was controlled entirely through ROS's MoveIt! library for motion planning and manipulation (mainly the compute_cartesian_path command). After initializing the Move Group Commander for Baxter's right arm, a table is added to the Planning Scene to ensure that the robot does not collide with the table. 
