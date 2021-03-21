@@ -40,13 +40,17 @@ This wasn't as easy as just redefining the map's width, height and origin; I als
 
 Therefore I wrote my own map_expansion node to solve this issue. This node created a new map with pixel size 384 x 384 and an origin at (-10, -10). I then read in the slam_toolbox map data and, given the difference in size and origin between the slam_toolbox map and new map, I was able to fill in the remaining space with unknown cells to explore. 
 
-** insert images of slam_toolbox map and then new_map **
+Please see the image below to visualize the sections of the new map that were added. The black box represents the map created from slam_toolbox. The map expansion node fills in the yellow box, then the orange boxes and finally the green box with unknown cells for the new map. 
+
+<p align="center">
+  <img width="600" height="800" src="{{ site.baseurl }}/images/map_expansion.png">
+</p>
 
 ## Map Merging
 Once all the maps were of the appropirate size and the robots we're able to explore frontiers, it was time to start merging the maps. Please see the flowchart below to understand the structure of merging multiple robot maps. 
 
 <p align="center">
-  <img width="600" height="400" src="{{ site.baseurl }}/images/map_flowchart.png">
+  <img width="800" height="600" src="{{ site.baseurl }}/images/map_flowchart.png">
 </p>
 
 For operations where you know the inital positions of the robots, map merging is relative strightforward. However, in a realistic setting, its unlikely that someone would have that kind of control or knowledge. But without knowing the robot positions, how can you merge the maps? The multirobot_map_merge node uses feature matching to stitch the sperate maps into one. Unfortunately this functionality has a catch, you have to initially place the robot's very close to each other so there is enough overlap for the feature matching algorithm to work. 
