@@ -20,12 +20,13 @@ Below is a link to a video (__x speed) of the project.
 In order for the robots to autonomously explore an environment, I implemented frontier exploration from scratch. By manipulating the occupancy grid generated from <a href="http://wiki.ros.org/slam_toolbox" target="_blank" rel="noopener noreferrer">slam_toolbox</a>. I was able to find all the frontier edges and then group the edges into seperate frontier regions via <a href="http://web.archive.org/web/20200218053936/http://robotfrontier.com/frontier/detect.html" target="_blank" rel="noopener noreferrer">this algorithm</a>. For each frontier region, I found the region's centroid. Lastly, I determined which centroid was closest to the robot's current position and chose that centroid to move to. This process repeats until all areas of the map are explored. 
 
 <div align="center">Frontier edges are open cells adjacent to unknown cells, marked with an “x” below. </div>
-<p align="center">![]({{ site.baseurl }}/images/frontier_edges.png)</p>
+<p align="center">
+  <img width="200" height="200" src="{{ site.baseurl }}/images/frontier_edges.png">
+</p>
 
 <div align="center">Frontier regions are groups of adjacent frontier regions, marked with different colors below. Each region's centroid is also marked.</div>
-<p align="center">![]({{ site.baseurl }}/images/frontier_regions.png)</p>
 <p align="center">
-  <img width="460" height="300" src="{{ site.baseurl }}/images/frontier_regions.png">
+  <img width="250" height="100" src="{{ site.baseurl }}/images/frontier_regions.png">
 </p>
 
 Below is a video of frontier exploration working on one robot both in simulation and on an actual Turtlebot3. 
@@ -35,7 +36,7 @@ Below is a video of frontier exploration working on one robot both in simulation
 ## Map Expansion
 Before being able to merge the robot's maps, I had to manipulate the maps. The multirobot_map_merge node that I used was originally written for gmapping and produced maps with the same size and origin for all robots. However, I decided to utilize slam_toolbox instead of gmapping, This meant that I had to expand the maps I recieved from slam_toolbox and resize them so that all robot maps had matching origins and sizes. 
 
-
+This wasn't as easy as just redefining the map's width, height and origin; I also had to edit the map's data. The new map's width * height had to match the length of the cell data
 
 ## Map Merging
 
