@@ -34,9 +34,13 @@ Below is a video of frontier exploration working on one robot both in simulation
 ** insert video **
 
 ## Map Expansion
-Before being able to merge the robot's maps, I had to manipulate the maps. The multirobot_map_merge node that I used was originally written for gmapping and produced maps with the same size and origin for all robots. However, I decided to utilize slam_toolbox instead of gmapping, This meant that I had to expand the maps I recieved from slam_toolbox and resize them so that all robot maps had matching origins and sizes. 
+Before being able to merge the robot's maps, I had to manipulate the maps. The multirobot_map_merge node that I used was originally written for gmapping and produced maps with the same size and origin for all robots. However, I decided to utilize slam_toolbox instead of gmapping. This meant that I had to expand the maps I recieved from slam_toolbox and resize them so that all robot maps had matching origins and sizes. 
 
-This wasn't as easy as just redefining the map's width, height and origin; I also had to edit the map's data. The new map's width * height had to match the size of the cell data and if I simply redefined the map's dimensions without actually adding any more cell data, I would have encounterd a memory deallocation error in C++. 
+This wasn't as easy as just redefining the map's width, height and origin; I also had to edit the map's data. The new map's width * height had to match the size of the cell data and if I simply redefined the map's dimensions without actually adding any more cell data, I would have encountd a memory deallocation error in C++. 
+
+Therefore I wrote my own map_expansion node to solve this issue. This node created a new map with pixel size 384 x 384 and an origin at (-10, -10). I then read in the slam_toolbox map data and, given the difference in size and origin between the slam_toolbox map and new map, I was able to fill in the remaining space with unknown cells to explore. 
+
+** insert images of slam_toolbox map and then new_map **
 
 ## Map Merging
 
