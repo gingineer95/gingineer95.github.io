@@ -2,16 +2,16 @@
 layout: post
 title:  Multi-Robot Exploration and Map Merging
 date:   2021-03-21 12:00:00 +0300
-image:  frontier_edges.png
+image:  3x_real_robot.gif
 tags:   SLAM, Frontier Exploration, Map Merge, ROS, C++
 ---
 
 # Project Overview
 In this project, my goal was to use multiple robots to autonomously explore an environment and create one global merged map comprised of each robot's individual map. This was be achived with or without knowledge of the robot's initial positions. Frontier exploration was implemented as the autonomous navigation algorithm and map merging was exectued by modifying the <a href="http://wiki.ros.org/multirobot_map_merge" target="_blank" rel="noopener noreferrer">multirobot_map_merge</a> node. Have a look at the code on my <a href="https://github.com/gingineer95/Multi-Robot-Exploration-and-Map-Merging" target="_blank" rel="noopener noreferrer">GitHub</a>.
 
-Below is a link to a video (20x speed) of the project.
+Below is a link to a video (20x speed) of the project..
 <a href="https://www.youtube.com/watch?v=6pEU1-0Ax6o&ab_channel=KaileySmith" target="_blank" rel="noopener noreferrer">
-![computer_vision.png](https://www.youtube.com/watch?v=6pEU1-0Ax6o&ab_channel=KaileySmith.jpg)
+![frontier_edges.png](https://www.youtube.com/vi/6pEU1-0Ax6o/0.jpg)
 </a>
 
 ## Frontier Exploration and SLAM
@@ -27,9 +27,11 @@ In order for the robots to autonomously explore an environment, I implemented fr
   <img width="250" height="100" src="{{ site.baseurl }}/images/frontier_regions.png">
 </p>
 
-Below is a video of frontier exploration working on one robot both in simulation and on an actual Turtlebot3. 
+Below is a GIF (at 3x speed) of frontier exploration working on one robot both in simulation and on an actual Turtlebot3. 
 
-** insert video **
+<p align="center">
+  <img width="250" height="100" src="{{ site.baseurl }}/images/3x_real_robot.gif">
+</p>
 
 ## Map Expansion
 Before being able to merge the robot's maps, I had to manipulate the maps. The multirobot_map_merge node that I used was originally written for gmapping and produced maps with the same size and origin for all robots. However, I decided to utilize slam_toolbox instead of gmapping. This meant that I had to expand the maps I recieved from slam_toolbox and resize them so that all robot maps had matching origins and sizes. 
