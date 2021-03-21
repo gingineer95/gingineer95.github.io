@@ -43,5 +43,13 @@ Therefore I wrote my own map_expansion node to solve this issue. This node creat
 ** insert images of slam_toolbox map and then new_map **
 
 ## Map Merging
+Once all the maps were of the appropirate size and the robots we're able to explore frontiers, it was time to start merging the maps. Please see the flowchart below to understand the structure of multi-robot exploration and merging multiple robot maps. 
 
 ** insert flowchart **
+
+For operations where you know the inital positions of the robots, map merging is relative strightforward. However, in a realistic setting, its unlikely that someone would have that kind of control or knowledge. But without knowing the robot positions, how can you merge the maps? The multirobot_map_merge node uses feature matching to stitch the sperate maps into one. Unfortunately this functionality has a catch, you have to initially place the robot's very close to each other so there is enough overlap for the feature matching algorithm to work. 
+
+In my continued work on this project, I'll be tackling this issue and develop a method where the robots can start exploring without any information about the other while a feature detection algothrim works in the background to detected matching areas of the maps. Once common ground is found, I will then initiate the map merging process and reconfigure the robot's to explore frontiers on the combined map instead of their local maps. 
+
+## Future Development
+Aside from the development I mentioned above I am also working on making this software more modular so that adding more robots to this operation is as simple as adding another namespace. I'll soon be running frontier exploration and map mergering with my currnet software on two actual Turtlebots as well. 
