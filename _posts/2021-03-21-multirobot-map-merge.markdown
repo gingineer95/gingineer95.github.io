@@ -43,7 +43,7 @@ Therefore I wrote my own map_expansion node to solve this issue. This node creat
 Please see the image below to visualize the sections of the new map that were added. The black box represents the map created from slam_toolbox. The map expansion node fills in the yellow box, then the orange boxes and finally the green box with unknown cells for the new map. 
 
 <p align="center">
-  <img width="600" height="800" src="{{ site.baseurl }}/images/map_expansion.png">
+  <img width="800" height="800" src="{{ site.baseurl }}/images/map_expansion.png">
 </p>
 
 ## Map Merging

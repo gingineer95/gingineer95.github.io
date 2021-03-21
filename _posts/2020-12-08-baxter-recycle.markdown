@@ -48,3 +48,9 @@ A Realsense camera was used to take real-time video of the objects placed in fro
 10. Depending on the object's classification, the arm will move to the appropriate bin. Baxter's head will also display the recycling image.
 11. Once over the bin, Baxter opens its grippers and drops the object. To show that the object has been recycled, Baxter displays the bin image.
 12. Steps 3 through 11 are repeated for all objects found.
+
+## Team Members
+- Yael Ben Shalom
+- Chris Aretakis
+- Jake Ketchum
+- Mingqing Yuan
