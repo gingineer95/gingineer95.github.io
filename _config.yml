@@ -11,6 +11,8 @@ plugins:
   - jekyll-sitemap
   - jekyll/tagging
 
+# future: true
+
 paginate: 5
 paginate_path: "/page/:num"
 
