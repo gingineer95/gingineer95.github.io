@@ -32,7 +32,7 @@ To model the motor’s behavior, I started using a simple equation that expresse
 <img src="https://latex.codecogs.com/svg.latex?\LARGE&space;{\color{White}&space;x(t)&space;=&space;\frac{rV(k_t^2G^2&space;t&space;&plus;&space;Rm{r}^2&space;({e}^{-\frac{k_t^2G^2&space;t}{Rm{r}^2}}&space;-&space;1))}{k_t^3G^3}}" title="\LARGE {\color{White} x(t) = \frac{rV(k_t^2G^2 t + Rm{r}^2 ({e}^{-\frac{k_t^2G^2 t}{Rm{r}^2}} - 1))}{k_t^3G^3}}" />
 </p>
 <p align="center">
-<img src="https://latex.codecogs.com/svg.latex?\large&space;{\color{White}&space;x'(t)&space;=&space;\frac{rV}{k_tG}&space;(1&space;-&space;{e}^{-\frac{k_t^2G^2&space;t}{Rm{r}^2}})}" title="\large {\color{White} x'(t) = \frac{rV}{k_tG} (1 - {e}^{-\frac{k_t^2G^2 t}{Rm{r}^2}})}" />
+<img src="https://latex.codecogs.com/svg.latex?\LARGE&space;{\color{White}&space;x'(t)&space;=&space;\frac{rV}{k_tG}&space;(1&space;-&space;{e}^{-\frac{k_t^2G^2&space;t}{Rm{r}^2}})}" title="\LARGE {\color{White} x'(t) = \frac{rV}{k_tG} (1 - {e}^{-\frac{k_t^2G^2 t}{Rm{r}^2}})}" />
 </p>
 
 
