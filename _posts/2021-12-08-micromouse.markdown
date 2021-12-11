@@ -29,7 +29,7 @@ My goal was to create a simulated “race” between a given brushed DC motor an
 To model the motor’s behavior, I started using a simple equation that expressed input and outputs in terms of power. I manipulated that equation until I had an expression that was only dependent on the 1st and 2nd order differentials of displacement over time. Once I had a function that was dependent on displacement over time, I was able to run the “race” simualtions. In order to get the robots linear and velocity displacement over time to compare to they mice, solved the equation for *x(t)* as well as *x'(t)*:
 
 <p align="center">
-<img src="https://latex.codecogs.com/svg.latex?\large&space;{\color{White}&space;x(t)&space;=&space;\frac{rV(k_t^2G^2&space;t&space;&plus;&space;Rm{r}^2&space;({e}^{-\frac{k_t^2G^2&space;t}{Rm{r}^2}}&space;-&space;1))}{k_t^3G^3}}" title="\large {\color{White} x(t) = \frac{rV(k_t^2G^2 t + Rm{r}^2 ({e}^{-\frac{k_t^2G^2 t}{Rm{r}^2}} - 1))}{k_t^3G^3}}" />
+<img src="https://latex.codecogs.com/svg.latex?\LARGE&space;{\color{White}&space;x(t)&space;=&space;\frac{rV(k_t^2G^2&space;t&space;&plus;&space;Rm{r}^2&space;({e}^{-\frac{k_t^2G^2&space;t}{Rm{r}^2}}&space;-&space;1))}{k_t^3G^3}}" title="\LARGE {\color{White} x(t) = \frac{rV(k_t^2G^2 t + Rm{r}^2 ({e}^{-\frac{k_t^2G^2 t}{Rm{r}^2}} - 1))}{k_t^3G^3}}" />
 </p>
 <p align="center">
 <img src="https://latex.codecogs.com/svg.latex?\large&space;{\color{White}&space;x'(t)&space;=&space;\frac{rV}{k_tG}&space;(1&space;-&space;{e}^{-\frac{k_t^2G^2&space;t}{Rm{r}^2}})}" title="\large {\color{White} x'(t) = \frac{rV}{k_tG} (1 - {e}^{-\frac{k_t^2G^2 t}{Rm{r}^2}})}" />
