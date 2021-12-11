@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  Micromouse Predator from Scratch
-date:   2021-12-08 12:00:00 +0300
+date:   2021-12-11 12:00:00 +0300
 image:  mm/robot.gif
 tags:   Mechatronics, C, PCB Design, Solidworks
 ---
 
-# Project Overview
+# Project Overview:
 
 The goal of this project was to design, construct, and control a small wheeled robot, completely from scratch. Dr. Malcolm MacIver’s lab is studying robot-rodent interactions and required a robot to act as a high-speed predator that will constantly try to discover, chase, and corner a mouse in a maze-like habitat. 
 
