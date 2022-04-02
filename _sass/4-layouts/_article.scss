@@ -35,7 +35,7 @@
     z-index: 1;
     border-radius: 10px;
     // background: rgba(255, 255, 255, 0.98);
-    background:#5D6D7E;
+    background: $dark;
     // box-shadow: 0 1px 4px rgba(0,0,0,0.15);
     box-shadow: 0 1px 5px rgb(255, 255, 255);
     // cursor: pointer;
@@ -66,7 +66,7 @@
         color: $brand-color;
         border-bottom: 1px solid transparent;
         &:hover {
-          color: $white;
+          color: $brand2-color;
           border-color: $brand-color;
         }
       }
@@ -82,7 +82,7 @@
       font-size: 14px;
       line-height: 18px;
       text-transform: uppercase;
-      color: $white;
+      color: $light-black;
     }
 
     .article__footer {
@@ -95,11 +95,12 @@
         font-size: 14px;
         line-height: 18px;
         letter-spacing: 1px;
+        font-weight: 700;
         text-transform: uppercase;
         border-bottom: 1px solid transparent;
         color: $brand-color;
         &:hover {
-          color: $white;
+          color: $brand2-color;
           border-color: $brand-color;
         }
       }

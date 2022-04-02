@@ -7,6 +7,7 @@
     max-width: 100%;
     font-size: 50px;
     line-height: 70px;
+    // text-align: center;
   }
 
   .post__date {
@@ -57,7 +58,8 @@
   // }
 
   .post__tags {
-    color: $brand-color;
+    color: $light-black;
+    // font-style: italic;
    .post__tags-tag {
      position: relative;
      padding-left: 10px;
@@ -107,7 +109,9 @@
   }
 
   img {
-    margin: 30px 0;
+    margin: 30px 0px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -132,7 +136,7 @@
 
       a {
         font-size: 40px;
-        color: $light-black;
+        color: $black;
         &:hover {
           color: $white;
         }
@@ -193,7 +197,7 @@
         text-overflow: ellipsis;
         color: $brand-color;
         &:hover {
-          color: $light-black;
+          color: $white;
         }
       }
     }

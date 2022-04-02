@@ -10,9 +10,9 @@ tags:   Mechatronics, C, PCB Design, Solidworks
 
 The goal of this project was to design, construct, and control a small wheeled robot, completely from scratch. Dr. Malcolm MacIver’s lab is studying robot-rodent interactions and required a robot to act as a high-speed predator that will constantly try to discover, chase, and corner a mouse in a maze-like habitat. 
 
-To achieve this, I drew knowledge from my previous mechatronics experience to build a motor control circuit, communicate wirelessly using a Digi XBee module radio, as well as create a custom PCB. I also took inspiration from the <a href="https://en.wikipedia.org/wiki/Micromouse" target="_blank" rel="noopener noreferrer">Half-Sized Micromouse Competition</a> for both mechanical and electrical design. 
+To achieve this, I drew knowledge from my previous mechatronics experience to build a motor control circuit, communicate wirelessly using a Digi XBee module radio, as well as create a custom PCB. I also took inspiration from the **<a href="https://en.wikipedia.org/wiki/Micromouse" target="_blank" rel="noopener noreferrer">Half-Sized Micromouse Competition</a>** for both mechanical and electrical design. 
 
-Have a look at the code on my <a href="https://github.com/gingineer95/Micromouse_Predator" target="_blank" rel="noopener noreferrer">GitHub</a>.
+Have a look at the code on my **<a href="https://github.com/gingineer95/Micromouse_Predator" target="_blank" rel="noopener noreferrer">GitHub</a>**.
 
 ## Design Constraints and Considerations
 
@@ -20,7 +20,11 @@ Overall, this project was relatively open-ended. The three hard constraints were
 
 While there were no height or weight restrictions for this robot, those variables certainly played a significant role in my design process. If the center of mass of the robot was too high, the robot would tip over when making high-speed turns. And the heavier the total mass of the robot became, the larger the motors would have to become to create the appropriate driving torque. Given these considerations coupled with the fact that speed and width we’re the main constraints on this robot, I first turned my focus to analyzing and comparing different motors.
 
-![forward_back](https://user-images.githubusercontent.com/70979347/145663630-b14f3423-a97c-4694-a2b0-1232f6001867.gif)
+<!-- ![forward_back](https://user-images.githubusercontent.com/70979347/145663630-b14f3423-a97c-4694-a2b0-1232f6001867.gif) -->
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/70979347/145663630-b14f3423-a97c-4694-a2b0-1232f6001867.gif" />
+</p>
 
 ## Motor Analysis
 
@@ -29,10 +33,10 @@ My goal was to create a simulated “race” between a given brushed DC motor an
 To model the motor’s behavior, I started using a simple equation that expressed input and outputs in terms of power. I manipulated that equation until I had an expression that was only dependent on the 1st and 2nd order differentials of displacement over time. Once I had a function that was dependent on displacement over time, I was able to run the “race” simualtions. In order to get the robots linear and velocity displacement over time to compare to they mice, solved the equation for *x(t)* as well as *x'(t)*:
 
 <p align="center">
-<img src="https://latex.codecogs.com/svg.latex?\LARGE&space;{\color{White}&space;x(t)&space;=&space;\frac{rV(k_t^2G^2&space;t&space;&plus;&space;Rm{r}^2&space;({e}^{-\frac{k_t^2G^2&space;t}{Rm{r}^2}}&space;-&space;1))}{k_t^3G^3}}" title="\LARGE {\color{White} x(t) = \frac{rV(k_t^2G^2 t + Rm{r}^2 ({e}^{-\frac{k_t^2G^2 t}{Rm{r}^2}} - 1))}{k_t^3G^3}}" />
+<img src="https://latex.codecogs.com/svg.latex?\LARGE&space;{\color{Black}&space;x(t)&space;=&space;\frac{rV(k_t^2G^2&space;t&space;&plus;&space;Rm{r}^2&space;({e}^{-\frac{k_t^2G^2&space;t}{Rm{r}^2}}&space;-&space;1))}{k_t^3G^3}}" title="\LARGE {\color{Black} x(t) = \frac{rV(k_t^2G^2 t + Rm{r}^2 ({e}^{-\frac{k_t^2G^2 t}{Rm{r}^2}} - 1))}{k_t^3G^3}}" />
 </p>
 <p align="center">
-<img src="https://latex.codecogs.com/svg.latex?\LARGE&space;{\color{White}&space;x'(t)&space;=&space;\frac{rV}{k_tG}&space;(1&space;-&space;{e}^{-\frac{k_t^2G^2&space;t}{Rm{r}^2}})}" title="\LARGE {\color{White} x'(t) = \frac{rV}{k_tG} (1 - {e}^{-\frac{k_t^2G^2 t}{Rm{r}^2}})}" />
+<img src="https://latex.codecogs.com/svg.latex?\LARGE&space;{\color{Black}&space;x'(t)&space;=&space;\frac{rV}{k_tG}&space;(1&space;-&space;{e}^{-\frac{k_t^2G^2&space;t}{Rm{r}^2}})}" title="\LARGE {\color{Black} x'(t) = \frac{rV}{k_tG} (1 - {e}^{-\frac{k_t^2G^2 t}{Rm{r}^2}})}" />
 </p>
 
 
@@ -109,6 +113,7 @@ Below is a video of robot being given left and right DC commands. It shows the r
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UWJekWSlxOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<p></p>
 ## Next Steps
 
 As a safety feature the next immediate step will be incorporating the IR distance sensors as object avoidance / collision detection. I have already accounted for the sensors in my PCB, so all there is left to do is mount the hardware and implement functionality onto the microchip such that the robot stops if it senses that an object is too close. 

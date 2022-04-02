@@ -15,29 +15,29 @@ $global-transition: all .35s;
 // *****************
 // Color Variables
 // *****************
-// $brand-color: #7D3C98;
-$brand-color: #C4A2D2;
-$dark: #393e46;
-$light-gray: #e6eef0;
+$brand-color: #2b6777;
+$brand2-color: #52ab98;
+$dark: #f2f2f2;
+$page-color:#c8d8e4;
+
 $white: #ffffff;
-$page-color:#34495E;
-$light-black: #0000009f;
+$light-gray: #e6eef0;
+$light-black: #0a0a0a9f;
 $black: #000000;
 
 // Background Colors
 $background-color: $page-color;
 
 // Body Color
-// $text-color: $dark;
-$text-color: $light-gray;
+$text-color: $black;
 
 // Headings
-// $heading-font-color: $dark;
 $heading-font-color: $light-gray;
 
 // Links
 $link-color: $brand-color;
-$link-color-hover: darken($dark, 15%);
+// $link-color-hover: darken($black, 100%);
+$link-color-hover: brightness(1.75);
 
 // Button
 $button-color: $white;
@@ -45,13 +45,12 @@ $button-background-color: $brand-color;
 
 // Border
 $border-color: $light-gray;
-// $border-color: $yellow;
 
 
 // *****************
 // Typography
 // *****************
-$base-font-size: 16px;
+$base-font-size: 18px;
 $base-font-style: normal;
 $base-font-variant: normal;
 $base-font-weight: normal;

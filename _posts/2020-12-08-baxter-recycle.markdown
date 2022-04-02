@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  Baxter Recycling Classification
+title:  Baxter Recycling
 date:   2020-12-08 12:00:00 +0300
 image:  Baxter_sorting.gif
-tags:   ROS, MoveIt!, OpenCV, Python
+tags:   ROS, Python, MoveIt!, OpenCV
 ---
 <!-- <div align="center"><em>GIF is playing at 4x speed.</em></div>
 <p>&nbsp;</p> -->
 
 # Project Overview:
-In this project, my team programmed a Rethink Baxter robot to classify and pick bottles and cans then drop them into separate recycling bins. We used OpenCV to detect and locate the randomly placed bottles and cans, while for the robotic manipulation we utilized MoveIt!. Take a look at the code on my <a href="https://github.com/gingineer95/baxter-recycling" target="_blank" rel="noopener noreferrer">GitHub</a>. (Note: the GIF above is playing at 2x speed)
+In this project, my team programmed a Rethink Baxter robot to classify and pick bottles and cans then drop them into separate recycling bins. We used OpenCV to detect and locate the randomly placed bottles and cans, while for the robotic manipulation we utilized MoveIt!. Take a look at the code on my **<a href="https://github.com/gingineer95/baxter-recycling" target="_blank" rel="noopener noreferrer">GitHub</a>**. (Note: the GIF above is playing at 2x speed)
 
 Below is a link to a video (4x speed) of the project. The video starts by showing the bottles and cans being placed, then a quick view of the computer vision, and lastly it displays two different views of the robot in action. 
 
@@ -26,7 +26,11 @@ The arm then moves to a position out of the camera's field of view and calls the
 ## Computer Vision
 A Realsense camera was used to take real-time video of the objects placed in front of the robot. After calibrating the camera, we used OpenCV and specifically Hough Circles to identify, locate and classify the bottles and cans. The camera classification service returns a list with the position and classification of all bottles and cans in the camera's view.
 
-![]({{ site.baseurl }}/images/computer_vision.png)
+<!-- ![]({{ site.baseurl }}/images/computer_vision.png) -->
+
+<p align="center">
+    <img src="{{ site.baseurl }}/images/computer_vision.png">
+</p>
 
 
 ## Action Sequence

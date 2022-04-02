@@ -1,11 +1,11 @@
 .footer {
   position: relative;
-  padding: 50px 0 40px;
+  padding: 10px 0 10px;
   // padding-top: 100px;
   // padding-bottom: 100px;
   text-align: center;
-  border-top: 1px solid $light-gray;
-  background: #5D6D7E;
+  border-top: 1px solid $brand2-color;
+  background: $brand-color;
 
   .contact {
     margin-bottom: 10px;
@@ -14,9 +14,9 @@
   .copyright {
     a {
       font-size: 40px;
-      color: $dark;
+      color: $white;
       &:hover {
-        color: $brand-color;
+        color: $brand2-color;
       }
     }
   }
